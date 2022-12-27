@@ -10,9 +10,12 @@
 		B05D2656295B549100EE05AF /* GimBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D2655295B549100EE05AF /* GimBooksApp.swift */; };
 		B05D265A295B549300EE05AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05D2659295B549300EE05AF /* Assets.xcassets */; };
 		B05D265D295B549300EE05AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05D265C295B549300EE05AF /* Preview Assets.xcassets */; };
-		B05D2665295B54B000EE05AF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D2664295B54B000EE05AF /* LoginView.swift */; };
 		B05D2668295B54D200EE05AF /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D2667295B54D200EE05AF /* RouteManager.swift */; };
 		B05D266B295B553E00EE05AF /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D266A295B553E00EE05AF /* OTPView.swift */; };
+		B05D2670295B579600EE05AF /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D266F295B579600EE05AF /* RootView.swift */; };
+		B05D2672295B57DB00EE05AF /* MobileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D2671295B57DB00EE05AF /* MobileView.swift */; };
+		B05D2674295B593D00EE05AF /* SessioinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D2673295B593D00EE05AF /* SessioinManager.swift */; };
+		B05D2677295B5FFA00EE05AF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D2676295B5FFA00EE05AF /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,9 +23,12 @@
 		B05D2655295B549100EE05AF /* GimBooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimBooksApp.swift; sourceTree = "<group>"; };
 		B05D2659295B549300EE05AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B05D265C295B549300EE05AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B05D2664295B54B000EE05AF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B05D2667295B54D200EE05AF /* RouteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
 		B05D266A295B553E00EE05AF /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		B05D266F295B579600EE05AF /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B05D2671295B57DB00EE05AF /* MobileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileView.swift; sourceTree = "<group>"; };
+		B05D2673295B593D00EE05AF /* SessioinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessioinManager.swift; sourceTree = "<group>"; };
+		B05D2676295B5FFA00EE05AF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				B05D2655295B549100EE05AF /* GimBooksApp.swift */,
+				B05D266F295B579600EE05AF /* RootView.swift */,
 				B05D2663295B54A800EE05AF /* Login */,
-				B05D2669295B552200EE05AF /* OTP */,
+				B05D2675295B5FED00EE05AF /* Home */,
 				B05D2666295B54C600EE05AF /* Manager */,
 				B05D2659295B549300EE05AF /* Assets.xcassets */,
 				B05D265B295B549300EE05AF /* Preview Content */,
@@ -76,7 +83,8 @@
 		B05D2663295B54A800EE05AF /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B05D2664295B54B000EE05AF /* LoginView.swift */,
+				B05D266C295B577900EE05AF /* Mobile */,
+				B05D2669295B552200EE05AF /* OTP */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				B05D2667295B54D200EE05AF /* RouteManager.swift */,
+				B05D2673295B593D00EE05AF /* SessioinManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -95,6 +104,22 @@
 				B05D266A295B553E00EE05AF /* OTPView.swift */,
 			);
 			path = OTP;
+			sourceTree = "<group>";
+		};
+		B05D266C295B577900EE05AF /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				B05D2671295B57DB00EE05AF /* MobileView.swift */,
+			);
+			path = Mobile;
+			sourceTree = "<group>";
+		};
+		B05D2675295B5FED00EE05AF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B05D2676295B5FFA00EE05AF /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05D2672295B57DB00EE05AF /* MobileView.swift in Sources */,
 				B05D2668295B54D200EE05AF /* RouteManager.swift in Sources */,
-				B05D2665295B54B000EE05AF /* LoginView.swift in Sources */,
 				B05D266B295B553E00EE05AF /* OTPView.swift in Sources */,
+				B05D2674295B593D00EE05AF /* SessioinManager.swift in Sources */,
+				B05D2677295B5FFA00EE05AF /* HomeView.swift in Sources */,
 				B05D2656295B549100EE05AF /* GimBooksApp.swift in Sources */,
+				B05D2670295B579600EE05AF /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

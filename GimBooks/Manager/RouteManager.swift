@@ -7,10 +7,37 @@
 
 import SwiftUI
 
-enum Route:Hashable{
-    case loginView
+enum LoggedOutRouteViews:Hashable{
+    case otp
+    case mobile
+    
+    
+    ///Title correspoding each View
+    var title:String{
+        switch self {
+        case .otp:
+            return "OTP"
+        case .mobile:
+            return "Mobile"
+        }
+    }
 }
+
+enum LoggedInRouteViews:Hashable{
+    case home
+}
+
 
 class RouteManager:ObservableObject{
     @Published var route:NavigationPath = NavigationPath()
+    
+    func goToRootView(){
+        self.route = NavigationPath()
+    }
+    
+    func goBack(){
+        if(self.route.count > 1){
+            self.route.removeLast()
+        }
+    }
 }

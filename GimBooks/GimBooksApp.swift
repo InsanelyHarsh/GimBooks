@@ -11,7 +11,7 @@ import SwiftUI
 struct GimBooksApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            RootView()
         }
     }
 }
