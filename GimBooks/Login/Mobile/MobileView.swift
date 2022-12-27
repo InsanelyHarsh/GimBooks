@@ -17,7 +17,7 @@ struct MobileView: View {
                 
                 //MARK: Mobile Number
                 VStack(alignment: .leading, spacing: 20){
-                    Text("Enter Mobile Number")
+                    Text("Enter Phone Number")
                         .font(.title2)
                         .bold()
                     

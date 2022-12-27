@@ -14,6 +14,7 @@ struct HomeView: View {
             Text("Welcome !")
             
             Button {
+                UserDefaults.standard.set(false, forKey: Constants.isLoggedIn)
                 self.sessionManager.didLoggedOut()
             } label: {
                 Text("Log out")

@@ -20,6 +20,9 @@ struct RootView: View {
                 }
             }
         }
+        .onAppear{
+            self.sessionManager.configureCurrentState()
+        }
         .navigationBarBackButtonHidden()
         .environmentObject(sessionManager)
         .environmentObject(routeManager)

@@ -18,4 +18,15 @@ class SessionManager:ObservableObject{
     func didLoggedOut(){
         self.isLoggedIn = false
     }
+    
+    func configureCurrentState(){
+        let hasLoggedIn = UserDefaults.standard.bool(forKey: Constants.isLoggedIn)
+        
+        self.isLoggedIn = hasLoggedIn
+    }
+}
+
+
+struct Constants{
+    static var isLoggedIn:String = "IS_USER_LOGGED_IN"
 }

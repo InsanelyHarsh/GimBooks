@@ -38,16 +38,30 @@ struct OTPView: View {
                     
                     Text("Sent to XXXXXXXXX")
                         .font(.caption)
+                        .foregroundColor(.gray)
                     
                     TextField("Number", text: $otp)
                         .keyboardType(.numberPad)
                         .font(.title2)
                         .padding(.top)
+                    
+                    HStack{
+                        Text("Didn't recieve OTP yet?")
+                            .foregroundColor(.gray)
+                        
+                        Button {
+                            
+                        } label: {
+                            Text("Re-send")
+                                .underline(true, color: .blue)
+                        }
+                    }.font(.caption)
                 }
             }.padding(.horizontal)
             
             Button(action: {
                 self.routeManager.goToRootView()
+                UserDefaults.standard.set(true, forKey: Constants.isLoggedIn)
                 self.sessionManager.didLoggedIn()
             }, label: {
                 Text("Verify")
