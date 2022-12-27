@@ -20,6 +20,7 @@ struct RootView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden()
         .environmentObject(sessionManager)
         .environmentObject(routeManager)
     }

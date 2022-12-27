@@ -8,17 +8,40 @@
 import SwiftUI
 
 struct MobileView: View {
-
+    @State var number:String = "7014822911"
     var body: some View {
-        VStack{
-            Text("Hello, World!")
+        VStack(spacing: 40){
+            VStack(alignment: .leading, spacing: 55){
+                //MARK: Header
+                HeaderView(image: "gear") //TODO: system Image, change to image
+                
+                //MARK: Mobile Number
+                VStack(alignment: .leading, spacing: 20){
+                    Text("Enter Mobile Number")
+                        .font(.title2)
+                        .bold()
+                    
+                    TextField("Number", text: $number)
+                        .keyboardType(.numberPad)
+                        .font(.title3)
+                }
+            }.padding(.horizontal)
             
             NavigationLink(value: LoggedOutRouteViews.otp) {
-                Text("Verify")
+                Text("Continue")
             }
+            .buttonStyle(.borderedProminent)
+            .tint(.black)
+            .foregroundColor(.white)
+            .bold()
+            .font(.title3)
+//            .frame(width: 100, height: 50, alignment: .center)
+            
+            
+            Spacer()
         }
-        .navigationTitle("Login")
-        
+//        .navigationTitle("Login")
+        .navigationBarHidden(true)
         
         .navigationDestination(for: LoggedOutRouteViews.self) { value in
             switch value{
@@ -33,6 +56,8 @@ struct MobileView: View {
 
 struct MobileView_Previews: PreviewProvider {
     static var previews: some View {
-        MobileView()
+        RootView()
+            .navigationBarBackButtonHidden()
+//            .navigationBarHidden(true)
     }
 }

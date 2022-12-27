@@ -36,7 +36,7 @@ class RouteManager:ObservableObject{
     }
     
     func goBack(){
-        if(self.route.count > 1){
+        if(self.route.count > 0){
             self.route.removeLast()
         }
     }

@@ -16,6 +16,7 @@
 		B05D2672295B57DB00EE05AF /* MobileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D2671295B57DB00EE05AF /* MobileView.swift */; };
 		B05D2674295B593D00EE05AF /* SessioinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D2673295B593D00EE05AF /* SessioinManager.swift */; };
 		B05D2677295B5FFA00EE05AF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D2676295B5FFA00EE05AF /* HomeView.swift */; };
+		B05D267A295B6AA400EE05AF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D2679295B6AA400EE05AF /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		B05D2671295B57DB00EE05AF /* MobileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileView.swift; sourceTree = "<group>"; };
 		B05D2673295B593D00EE05AF /* SessioinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessioinManager.swift; sourceTree = "<group>"; };
 		B05D2676295B5FFA00EE05AF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B05D2679295B6AA400EE05AF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		B05D2654295B549100EE05AF /* GimBooks */ = {
 			isa = PBXGroup;
 			children = (
+				B05D2678295B6A9600EE05AF /* ReusableViews */,
 				B05D2655295B549100EE05AF /* GimBooksApp.swift */,
 				B05D266F295B579600EE05AF /* RootView.swift */,
 				B05D2663295B54A800EE05AF /* Login */,
@@ -120,6 +123,14 @@
 				B05D2676295B5FFA00EE05AF /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		B05D2678295B6A9600EE05AF /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				B05D2679295B6AA400EE05AF /* HeaderView.swift */,
+			);
+			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				B05D2677295B5FFA00EE05AF /* HomeView.swift in Sources */,
 				B05D2656295B549100EE05AF /* GimBooksApp.swift in Sources */,
 				B05D2670295B579600EE05AF /* RootView.swift in Sources */,
+				B05D267A295B6AA400EE05AF /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
